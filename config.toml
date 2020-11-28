@@ -1,6 +1,6 @@
 baseURL = "http://unsichtbarkeit.freie-buehne-jena.de/"
 languageCode = "de-de"
 title = "Markt der Unsichtbarkeiten"
-theme = "Unsichtbar"
+theme = "unsichtbar"
 
 DefaultContentLanguage = "de"
