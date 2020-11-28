@@ -1,0 +1,50 @@
+@mixin simpleGrid {
+  padding: 0 1.75rem;
+  @include breakpoint(medium) {
+    padding: 0 2rem;
+  }
+  @include breakpoint(large) {
+    padding: 0 3rem;
+  }
+  @include breakpoint(xlarge) {
+    padding: 0.5rem calc((100vw - 960px - 0.5rem) / 2);
+  }
+}
+
+html {
+  --dark: #383E42;
+  height: 100%; // Take the footer to the bottom
+}
+
+body {
+  // Site structure
+  display: grid;
+  height: 100%; // Take the footer to the bottom
+  grid-template-rows: auto 1fr auto; // rows: header, main, footer
+  margin: 0;
+
+
+  @include breakpoint(xxlarge) {
+  }
+
+}
+
+header, main, footer {
+  @include simpleGrid;
+}
+
+header {
+
+}
+
+main {
+
+}
+
+footer {
+
+}
+
+img {
+  max-width: 100%;
+}

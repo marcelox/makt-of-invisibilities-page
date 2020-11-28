@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  border-bottom: 2px solid var(--light-blue);
+
+  @include breakpoint(xxxlarge) {
+    justify-content: center;
+  }
+
+  .menu {
+
+  }
+
+}
+
+.logo {
+  display: flex;
+  width: 10rem;
+  padding: 1rem;
+  transition: width 400ms;
+
+  @include breakpoint(large) {
+    width: 20rem;
+  }
+
+}
+
+
