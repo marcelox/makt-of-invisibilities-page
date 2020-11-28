@@ -2,10 +2,7 @@
     <h1>{{ .Title }}</h1>
     <h2> {{- .Site.Params.description -}} </h2>
     <article>{{- .Content -}}</article>
-
     {{ range first 10 .Site.RegularPages }}
         <a href="{{ .URL }}">{{ .Title }}</a>
     {{ end }}
-
-
 {{ end }}
