@@ -13,7 +13,12 @@
 
 html {
   --dark: #383E42;
+  --back: #ffe9d9;
   height: 100%; // Take the footer to the bottom
+  @include breakpoint(xlarge) {
+    padding: 0 4rem;
+    background-color: white;
+  }
 }
 
 body {
@@ -38,7 +43,7 @@ header {
 }
 
 main {
-
+  background-color: var(--back);
   .inner-grid {
     @include simpleGrid;
   }
@@ -53,6 +58,12 @@ img {
   max-width: 100%;
 }
 
+.divider-w-text {
+  background-color: var(--dark);
+  h1, h2, a {
+    color: whitesmoke;
+  }
+}
 .divider {
   .a {
     transition: fill 450ms;
@@ -61,7 +72,31 @@ img {
 
   &:hover {
     .a {
-      fill: olive;
+      fill: var(--back);
+    }
+  }
+}
+
+.fb-logo {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: block;
+  width: 8rem;
+  svg {
+    polygon {
+      transition: transform 450ms;
+      transform-origin: 50% 50%;
+    }
+  }
+  &:hover, &:focus {
+    svg {
+	  #rad {
+        polygon {
+          transform: rotate(-90deg);
+		  transform-origin: 50% 50%;
+        }
+      }
     }
   }
 }
