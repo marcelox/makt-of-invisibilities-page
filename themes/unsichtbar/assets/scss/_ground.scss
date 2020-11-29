@@ -29,7 +29,7 @@ body {
 
 }
 
-header, main, footer {
+header, footer {
   @include simpleGrid;
 }
 
@@ -39,6 +39,10 @@ header {
 
 main {
 
+  .inner-grid {
+    @include simpleGrid;
+  }
+
 }
 
 footer {
@@ -47,4 +51,17 @@ footer {
 
 img {
   max-width: 100%;
+}
+
+.divider {
+  .a {
+    transition: fill 450ms;
+    fill: var(--dark);
+  }
+
+  &:hover {
+    .a {
+      fill: olive;
+    }
+  }
 }
