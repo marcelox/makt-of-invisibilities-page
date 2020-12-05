@@ -77,6 +77,58 @@ img {
   }
 }
 
+.logo {
+
+  svg {
+    path {
+      transition: fill 250ms, transform 750ms;
+    }
+    #first {
+      path {
+        fill: var(--dark);
+      }
+    }
+    #second {
+      path {
+        fill: transparent;
+      }
+    }
+    #sichtbar {
+      path {
+        transform: translateX(-34rem);
+      }
+    }
+    #un-keiten {
+      path {
+        transform: translateX(-34rem);
+      }
+    }
+	.der {
+      //transform: translateX(-2px);
+    }
+  }
+  &:hover, &:focus {
+    svg {
+      #first {
+        path {
+          fill: transparent;
+        }
+      }
+      #second {
+        path {
+		  fill: var(--dark-blue);
+          transform: translateX(-28rem);
+        }
+      }
+      #sichtbar {
+        path {
+          transform: translateX(-36.5rem);
+        }
+      }
+    }
+  }
+}
+
 .fb-logo {
   position: absolute;
   top: 1rem;
@@ -85,7 +137,7 @@ img {
   width: 8rem;
   svg {
     polygon {
-      transition: transform 450ms;
+      transition: transform 1150ms;
       transform-origin: 50% 50%;
     }
   }
