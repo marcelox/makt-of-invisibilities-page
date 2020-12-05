@@ -4,3 +4,13 @@ title = "Markt der Unsichtbarkeiten"
 theme = "unsichtbar"
 
 DefaultContentLanguage = "de"
+
+[params]
+    description = "Projekt der freien Bühne Jena"
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
+  featured_image = "/images/freienbuhne.jpg"
+  favicon = ""
