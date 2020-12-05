@@ -12,8 +12,15 @@
 }
 
 html {
-  --dark: #383E42;
+  --fb-green: #48bd9d;
+  --fb-dark: #231f20;
+  --fb-pink: #f397ac;
+  --fb-blue: #00aeef;
+
+  --darkred: rgb(138,16,2);
+  --petrol: rgb(79, 183, 152);
   --back: #ffe9d9;
+
   height: 100%; // Take the footer to the bottom
   @include breakpoint(xlarge) {
     padding: 0 4rem;
@@ -59,7 +66,7 @@ img {
 }
 
 .divider-w-text {
-  background-color: var(--dark);
+  background-color: var(--fb-dark);
   h1, h2, a {
     color: whitesmoke;
   }
@@ -67,7 +74,7 @@ img {
 .divider {
   .a {
     transition: fill 450ms;
-    fill: var(--dark);
+    fill: var(--fb-dark);
   }
 
   &:hover {
@@ -80,12 +87,15 @@ img {
 .logo {
 
   svg {
+    .cls-1 {
+      fill: var(--petrol);
+    }
     path {
       transition: fill 250ms, transform 750ms;
     }
     #first {
       path {
-        fill: var(--dark);
+        fill: var(--fb-dark);
       }
     }
     #second {
@@ -116,7 +126,7 @@ img {
       }
       #second {
         path {
-		  fill: var(--dark-blue);
+		  fill: var(--fb-dark-blue);
           transform: translateX(-28rem);
         }
       }
@@ -130,11 +140,33 @@ img {
 }
 
 .fb-logo {
+
+  .background-fb-logo {
+  fill: var(--fb-green);
+  }
+
+  .cls-2 {
+    fill: var(--fb-dark);
+  }
+
+  .cls-3 {
+    fill: #fff;
+  }
+
+  .cls-4 {
+    fill: var(--fb-pink);
+  }
+
+  .cls-5 {
+    fill: var(--fb-blue);
+  }
+
   position: absolute;
   top: 1rem;
   left: 1rem;
   display: block;
   width: 8rem;
+
   svg {
     polygon {
       transition: transform 1150ms;
