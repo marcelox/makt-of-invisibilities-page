@@ -20,35 +20,123 @@
     }
   }
 
-  .logo {
-    display: flex;
-
-    svg {
-      width: 100%;
-      height: 100px;
-    }
-
-    &:hover {
-      svg text {
-        tspan.b {
-          fill: green;
-
-        }
-      }
-    }
-
-  }
-
-
   @include breakpoint(xxxlarge) {
     justify-content: center;
   }
-
-  .menu {
-
-  }
-
 }
 
+.logo {
+  display: flex;
+
+  svg {
+    width: 100%;
+    height: 100px;
+
+    .cls-1 {
+      fill: var(--petrol);
+    }
+
+    path {
+      transition: fill 250ms, transform 750ms;
+    }
+
+    #first {
+      path {
+        fill: var(--fb-dark);
+      }
+    }
+
+    #second {
+      path {
+        fill: transparent;
+      }
+    }
+
+    #sichtbar {
+      path {
+        transform: translateX(-34rem);
+      }
+    }
+
+    #un-keiten {
+      path {
+        transform: translateX(-34rem);
+      }
+    }
+
+    .der {
+      //transform: translateX(-2px);
+    }
+  }
+
+  &:hover, &:focus, .sticky & {
+    svg {
+      #first {
+        path {
+          fill: transparent;
+        }
+      }
+
+      #second {
+        path {
+          fill: var(--fb-dark-blue);
+          transform: translateX(-28rem);
+        }
+      }
+
+      #sichtbar {
+        path {
+          transform: translateX(-36.5rem);
+        }
+      }
+    }
+  }
+}
+
+.fb-logo {
+  position: absolute; // relative to body
+  top: 1rem;
+  right: -.125rem;
+  display: block;
+  width: 8rem;
+
+  .background-fb-logo {
+    fill: var(--fb-green);
+  }
+
+  .cls-2 {
+    fill: var(--fb-dark);
+  }
+
+  .cls-3 {
+    fill: #fff;
+  }
+
+  .cls-4 {
+    fill: var(--fb-pink);
+  }
+
+  .cls-5 {
+    fill: var(--fb-blue);
+  }
+
+  svg {
+    polygon {
+      transition: transform 1150ms;
+      transform-origin: 50% 50%;
+    }
+  }
+
+  &:hover, &:focus {
+    svg {
+      #rad {
+        polygon {
+          transform: rotate(90deg);
+          transform-origin: 50% 50%;
+        }
+      }
+    }
+  }
+}
 
 

@@ -38,6 +38,7 @@ body {
   height: 100%; // Take the footer to the bottom
   grid-template-rows: auto 1fr auto; // rows: header, main, footer
   margin: 0;
+  position: relative;
 
 
   @include breakpoint(xxlarge) {
@@ -88,106 +89,6 @@ img {
   }
 }
 
-.logo {
-
-  svg {
-    .cls-1 {
-      fill: var(--petrol);
-    }
-    path {
-      transition: fill 250ms, transform 750ms;
-    }
-    #first {
-      path {
-        fill: var(--fb-dark);
-      }
-    }
-    #second {
-      path {
-        fill: transparent;
-      }
-    }
-    #sichtbar {
-      path {
-        transform: translateX(-34rem);
-      }
-    }
-    #un-keiten {
-      path {
-        transform: translateX(-34rem);
-      }
-    }
-	.der {
-      //transform: translateX(-2px);
-    }
-  }
-  &:hover, &:focus, .sticky & {
-    svg {
-      #first {
-        path {
-          fill: transparent;
-        }
-      }
-      #second {
-        path {
-		  fill: var(--fb-dark-blue);
-          transform: translateX(-28rem);
-        }
-      }
-      #sichtbar {
-        path {
-          transform: translateX(-36.5rem);
-        }
-      }
-    }
-  }
-}
-
-.fb-logo {
-
-  .background-fb-logo {
-  fill: var(--fb-green);
-  }
-
-  .cls-2 {
-    fill: var(--fb-dark);
-  }
-
-  .cls-3 {
-    fill: #fff;
-  }
-
-  .cls-4 {
-    fill: var(--fb-pink);
-  }
-
-  .cls-5 {
-    fill: var(--fb-blue);
-  }
-
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  display: block;
-  width: 8rem;
-
-  svg {
-    polygon {
-      transition: transform 1150ms;
-      transform-origin: 50% 50%;
-    }
-  }
-  &:hover, &:focus {
-    svg {
-	  #rad {
-        polygon {
-          transform: rotate(-90deg);
-		  transform-origin: 50% 50%;
-        }
-      }
-    }
-  }
-}
 
 .projects-nav {
   display: grid;
