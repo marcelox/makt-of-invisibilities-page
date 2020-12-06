@@ -40,7 +40,6 @@ body {
   margin: 0;
   position: relative;
 
-
   @include breakpoint(xxlarge) {
   }
 
@@ -55,6 +54,7 @@ header {
 }
 
 main {
+  border-radius: $border-radius;
   background-color: var(--back);
   .inner-grid {
     @include simpleGrid;
@@ -73,7 +73,7 @@ img {
 .divider-w-text {
   background-color: var(--fb-dark);
   h1, h2, a {
-    color: whitesmoke;
+    color: #404040;
   }
 }
 .divider {
@@ -112,6 +112,7 @@ img {
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  border-radius: $border-radius;
 
   .responsive-iframe {
     position: absolute;
