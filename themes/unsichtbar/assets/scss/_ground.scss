@@ -92,6 +92,19 @@ img {
 
 .projects-nav {
   display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  .projects-nav-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 15rem;
+  }
+  a {
+    font-family: 'Agency FB Bd Cond', "Helvetica Neue", sans-serif;
+    font-size: 3rem;
+    text-transform: capitalize;
+  }
 }
 
 .video-container {

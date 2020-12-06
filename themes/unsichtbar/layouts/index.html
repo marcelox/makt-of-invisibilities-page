@@ -4,12 +4,10 @@
         <h2> {{- .Site.Params.description -}} </h2>
         <article>{{- .Content -}}</article>
         <nav class="projects-nav">
-            {{ range first 10 .Site.RegularPages }}
-                <a class="projects-nav-item" href="{{ .URL }}">
+            {{ range first 12 .Site.RegularPages }}
+            <a class="projects-nav-item" href="{{ .URL }}" {{ with .Params.image }}style="background-image: url('{{ . }}')" {{ end }}>
                     {{ .Title }}
-                    {{ with .Params.image }}
-                    {{ end }}
-                </a>
+            </a>
             {{ end }}
         </nav>
     </div>
