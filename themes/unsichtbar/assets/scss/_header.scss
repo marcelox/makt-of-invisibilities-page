@@ -1,9 +1,24 @@
-header {
+#main-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0;
   border-bottom: 2px solid var(--light-blue);
+  height: 5rem;
+  transition: height 450ms;
+
+  &.sticky {
+    position: fixed;
+    background: var(--white);
+	height: 3rem;
+    left: 0;
+    right: 0;
+
+    @include breakpoint($passepartout-breakpoint) {
+      left: var(--passepartout);
+      right: var(--passepartout);
+    }
+  }
 
   .logo {
     display: flex;
@@ -17,7 +32,7 @@ header {
       svg text {
         tspan.b {
           fill: green;
-          
+
         }
       }
     }

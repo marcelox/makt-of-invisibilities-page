@@ -16,14 +16,18 @@ html {
   --fb-dark: #231f20;
   --fb-pink: #f397ac;
   --fb-blue: #00aeef;
+  --white: #fff;
 
   --darkred: rgb(138,16,2);
   --petrol: rgb(79, 183, 152);
   --back: #ffe9d9;
 
+  --passepartout: 4rem;
+
   height: 100%; // Take the footer to the bottom
-  @include breakpoint(xlarge) {
-    padding: 0 4rem;
+
+  @include breakpoint($passepartout-breakpoint) {
+    padding: 0 var(--passepartout);
     background-color: white;
   }
 }
@@ -117,7 +121,7 @@ img {
       //transform: translateX(-2px);
     }
   }
-  &:hover, &:focus {
+  &:hover, &:focus, .sticky & {
     svg {
       #first {
         path {

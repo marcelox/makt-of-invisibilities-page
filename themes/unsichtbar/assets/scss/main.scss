@@ -13,6 +13,8 @@ $breakpoints: (
         xxxxlarge: 2208px,
 );
 
+$passepartout-breakpoint: xlarge;
+
 @import "typography";
 @import "ground";
 @import "header";
