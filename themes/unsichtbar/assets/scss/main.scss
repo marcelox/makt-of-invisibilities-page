@@ -29,15 +29,31 @@ $border-radius: .75rem;
 @import "../../node_modules/swiper/components/pagination/pagination";
 @import "../../node_modules/swiper/components/thumbs/thumbs";
 
-// TODO: testing
 .swiper-container {
-  width: 800px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 100vw;
   height: auto;
-}
 
-.swiper-wrapper {
-  .swiper-slide {
-    width: 100%;
-    font-size: 4rem;
+  @include breakpoint($passepartout-breakpoint) {
+    max-width: calc(100vw - (var(--passepartout) * 2));
+  }
+
+  .swiper-wrapper {
+    align-items: center;
+
+    .swiper-slide {
+      width: 100%;
+	  display: flex;
+      justify-content: center;
+    }
+  }
+
+  .swiper-button-next, .swiper-button-prev {
+    color: white;
+    z-index: 2;
   }
 }
+
