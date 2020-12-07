@@ -2,7 +2,7 @@
     <div class="divider-w-text">
         <nav class="projects-nav">
             {{ range first 12 .Site.RegularPages }}
-            <a class="projects-nav-item" href="{{ .RelPermalink }}" style="background-image: url('{{ if .Params.image }}{{ .Permalink }}{{ end }}{{ with .Params.image }}{{ . }}{{ else }}{{ .Site.BaseURL }}img/kindertheater.jpg{{ end }}')">
+            <a class="projects-nav-item" href="{{ .RelPermalink }}" style="background-image: url('{{ if .Params.image }}{{ .Permalink }}{{ end }}{{ with .Params.image }}{{ . }}{{ else }}{{ .Site.BaseURL }}img/placeholder.jpg{{ end }}')">
                 <h2>{{- .Title -}}</h2>
             </a>
             {{ end }}
