@@ -1,7 +1,4 @@
 html {
-  font-family: "Open Sans", serif;
-  font-weight: 400;
-  font-style: normal;
   font-size: 16px;
   --h1: 2.5rem;
   @include breakpoint(large) {
@@ -22,13 +19,25 @@ body {
 
 @for $i from 1 through 6 {
   h#{$i} {
-    color: var(--light-blue);
+    color: var(--fb-dark);
     font-size: var(--h#{$i});
+	font-family: 'Agency FB Bd Cond', "Helvetica Neue", sans-serif;
+    font-weight: normal;
+	letter-spacing: .5px;
   }
 }
 
-nav {
-  font-family: futura-pt, sans-serif;
+.title-font {
+  font-family: 'Agency FB Bd Cond', "Helvetica Neue", sans-serif;
+  font-weight: normal;
+}
+
+p {
+  font-family: myriad-pro-semi-condensed, sans-serif;
+  font-weight: 400;
   font-style: normal;
-  text-transform: uppercase;
+  font-size: 3.75rem;
+  line-height: 1.25;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }

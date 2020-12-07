@@ -1,11 +1,14 @@
 #main-header {
   z-index: 3;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 0;
   height: 5rem;
   transition: height 450ms;
+
+  @include breakpoint($passepartout-breakpoint) {
+    justify-content: center;
+  }
 
   &.sticky {
     position: fixed;
@@ -18,10 +21,6 @@
       left: var(--passepartout);
       right: var(--passepartout);
     }
-  }
-
-  @include breakpoint(xxxlarge) {
-    justify-content: center;
   }
 }
 

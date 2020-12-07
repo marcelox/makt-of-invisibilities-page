@@ -49,21 +49,13 @@ header, footer {
   @include simpleGrid;
 }
 
-header {
-
-}
-
 main {
   border-radius: $border-radius;
   background-color: var(--back);
+
   .inner-grid {
     @include simpleGrid;
   }
-
-}
-
-footer {
-
 }
 
 img {
@@ -76,6 +68,7 @@ img {
     color: #404040;
   }
 }
+
 .divider {
   .a {
     transition: fill 450ms;
@@ -92,18 +85,30 @@ img {
 
 .projects-nav {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  padding: 1rem;
+  @include breakpoint($passepartout-breakpoint) {
+    grid-template-columns: repeat(5, 1fr);
+  }
 
   .projects-nav-item {
+    font-family: 'Agency FB Bd Cond', "Helvetica Neue", sans-serif;
+    font-size: 3rem;
+	line-height: 1.15;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 15rem;
-  }
-  a {
-    font-family: 'Agency FB Bd Cond', "Helvetica Neue", sans-serif;
-    font-size: 3rem;
+    border-radius: $border-radius;
     text-transform: capitalize;
+	opacity: 0.3;
+	transition: opacity 450ms, transform 450ms;
+    text-decoration: none;
+
+    &:hover, &:focus, #main-header.sticky + main & {
+      transform: translate(2px, 1px);
+      opacity: 1;
+      text-decoration: underline;
+    }
   }
 }
 

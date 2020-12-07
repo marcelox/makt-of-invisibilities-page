@@ -22,4 +22,22 @@ $border-radius: .75rem;
 @import "navigation";
 @import "footer";
 @import '../../node_modules/swiper/swiper';
+@import '../../node_modules/swiper/components/navigation/navigation';
+@import "../../node_modules/swiper/components/a11y/a11y.scss";
+@import "../../node_modules/swiper/components/controller/controller";
+@import "../../node_modules/swiper/components/navigation/navigation";
+@import "../../node_modules/swiper/components/pagination/pagination";
+@import "../../node_modules/swiper/components/thumbs/thumbs";
 
+// TODO: testing
+.swiper-container {
+  width: 800px;
+  height: auto;
+}
+
+.swiper-wrapper {
+  .swiper-slide {
+    width: 100%;
+    font-size: 4rem;
+  }
+}

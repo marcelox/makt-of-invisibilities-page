@@ -1,3 +1,16 @@
 {{ define "main" }}
 <p>I'm a custom template for the page november</p>
+
+{{ .Content }}
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        {{ range (readDir "content/gedenken-an-die-novemberpogrome/img/") }}
+        <div class="swiper-slide">
+            <img src="img/{{- .Name -}}" alt="">
+        </div>
+        {{ end }}
+    </div>
+</div>
+
 {{ end }}
