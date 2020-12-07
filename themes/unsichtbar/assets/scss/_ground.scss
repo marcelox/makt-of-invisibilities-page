@@ -103,12 +103,20 @@ img {
 	opacity: 0.3;
 	transition: opacity 450ms, transform 450ms;
     text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+     h2 {
+       color: white;
+     }
 
     &:hover, &:focus, #main-header.sticky + main & {
-      transform: translate(2px, 1px);
       opacity: 1;
-      text-decoration: underline;
     }
+    &:hover, &:focus {
+      transform: translate(2px, 1px);
+	}
   }
 }
 
