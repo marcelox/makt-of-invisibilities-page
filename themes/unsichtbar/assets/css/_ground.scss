@@ -1,6 +1,6 @@
 html {
   --fb-green: #48bd9d;
-  --fb-dark: #231f20;
+  --fb-dark: #202125;
   --fb-pink: #f397ac;
   --fb-blue: #00aeef;
   --white: #fff;
@@ -10,6 +10,9 @@ html {
   --back: #ffe9d9;
 
   --passepartout: 4rem;
+
+  --header-height: 5rem;
+  --header-fixed-height: 3rem;
 
   height: 100%; // Take the footer to the bottom
 
@@ -23,7 +26,7 @@ body {
   // Site structure
   display: grid;
   height: 100%; // Take the footer to the bottom
-  grid-template-rows: auto 1fr auto; // rows: header, main, footer
+  grid-template-rows: 1fr auto; // rows: header, main, footer (now header is sticky)
   margin: 0;
   position: relative;
 
@@ -37,16 +40,76 @@ header, footer {
 }
 
 main {
+  margin-top: var(--header-height);
+  transition: margin-top 450ms;
   border-radius: $border-radius;
-  background-color: var(--back);
+  background-color: var(--fb-dark);
+
+  .sticky + & {
+    margin-top: var(--header-fixed-height);
+  }
 
   .inner-grid {
     @include simpleGrid;
   }
 
   .intro {
+    @include paddings;
     padding-top: 2rem;
     color: white;
+    //animation: slideUp 3.5s forwards;
+	p {
+      opacity: 0;
+      transform: translateY(300px);
+      animation: clear 1s .75s forwards;
+	  + p {
+        animation: clear 1s 1.5s forwards;
+      }
+
+      .title-font {
+        animation: pulse 2s 2s ease-in-out infinite;
+		letter-spacing: .15rem;
+      }
+    }
+  }
+
+  .page-nav {
+    position: fixed;
+    top: 50%;
+	width: 3rem;
+
+    &.next, &.previous {
+      //overflow: hidden;
+
+      span {
+        display: block;
+        width: 200px;
+        background-color: var(--fb-dark);
+      }
+
+	  &:hover {
+        span {
+          animation: clear 450ms forwards;
+        }
+      }
+    }
+
+    &.next {
+      right: 0;
+	  margin-right: .5rem;
+
+      span {
+        transform: translateX(20rem);
+      }
+    }
+    &.previous {
+      left: 0;
+      margin-left: .5rem;
+
+      span {
+        transform: translateX(-20rem);
+      }
+    }
   }
 }
 
@@ -76,9 +139,17 @@ img {
 
 
 .projects-nav {
+  @include paddings;
+  @include inner-paddings;
   display: grid;
   padding: 1rem;
+  grid-gap: 2rem;
+
   @include breakpoint($passepartout-breakpoint) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include breakpoint(xxxlarge) {
     grid-template-columns: repeat(5, 1fr);
   }
 
@@ -92,7 +163,7 @@ img {
     height: 15rem;
     border-radius: $border-radius;
     text-transform: capitalize;
-	opacity: 0.3;
+	opacity: 0.1;
 	transition: opacity 450ms, transform 450ms;
     text-decoration: none;
     display: flex;
@@ -103,16 +174,33 @@ img {
        color: white;
      }
 
-    &:hover, &:focus, #main-header.sticky + main & {
-      opacity: 1;
+    #main-header.sticky + main & {
+      transition: opacity 450ms, transform 450ms;
+      opacity: 0.39;
+
+      &:hover, &:focus {
+        transform: translate(2px, 1px);
+        transition: opacity 450ms, transform 450ms;
+        opacity: 0.99;
+
+        h2 {
+          background-color: var(--fb-dark);
+          transition: background-color 450ms;
+        }
+      }
     }
+
     &:hover, &:focus {
       transform: translate(2px, 1px);
+      transition: opacity 450ms, transform 450ms;
+      opacity: 0.99;
 
       h2 {
         background-color: var(--fb-dark);
+		transition: background-color 450ms;
       }
 	}
+
   }
 }
 
@@ -148,7 +236,7 @@ img {
 /// Es gibt nur eine page
 .cards-container {
   @include inner-paddings;
-  @include vertical-spacings;
+  @include paddings;
   display: grid;
   grid-gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
@@ -180,7 +268,38 @@ img {
   }
 }
 
+@keyframes slideUp {
+  from {
+    transform: translateY(300px) scale(1.3);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-/* On mouse-over, add a deeper shadow */
+//awesome:
+@keyframes clear {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
 
-/* Add some padding inside the card container */
+@keyframes pulse {
+  0% {
+	opacity: 1;
+    transform: none;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: .15;
+    transform: scale(.8);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

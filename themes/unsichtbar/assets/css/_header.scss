@@ -3,24 +3,21 @@
   display: flex;
   align-items: center;
   margin: 0;
-  height: 5rem;
+  position: fixed;
+  background: var(--white);
+  left: 0;
+  right: 0;
+  height: var(--header-height);
   transition: height 450ms;
 
   @include breakpoint($passepartout-breakpoint) {
     justify-content: center;
+    left: var(--passepartout);
+    right: var(--passepartout);
   }
 
   &.sticky {
-    position: fixed;
-    background: var(--white);
-	height: 3rem;
-    left: 0;
-    right: 0;
-
-    @include breakpoint($passepartout-breakpoint) {
-      left: var(--passepartout);
-      right: var(--passepartout);
-    }
+	height: var(--header-fixed-height);
   }
 }
 

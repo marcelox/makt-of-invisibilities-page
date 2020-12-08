@@ -30,7 +30,7 @@ $border-radius: .75rem;
 @import "../../node_modules/swiper/components/thumbs/thumbs";
 
 .swiper-container {
-  background-color: black;
+  background-color: var(--fb-dark);
   display: flex;
   justify-content: center;
   width: 100%;

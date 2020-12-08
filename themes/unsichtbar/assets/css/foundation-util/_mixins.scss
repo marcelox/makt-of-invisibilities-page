@@ -337,13 +337,14 @@
   };
 }
 
-@mixin vertical-spacings {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+@mixin paddings {
+  margin: 1.5rem;
 
   @include breakpoint(xlarge) {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    margin: 4rem;
   };
 
+  @include breakpoint(xxlarge) {
+    margin: 6rem;
+  };
 }
