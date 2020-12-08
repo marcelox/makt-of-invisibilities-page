@@ -1,8 +1,10 @@
 {{ define "main" }}
 
+<h2>{{ .Title }}</h2>
 {{ .Content }}
 
 <section class="section-a">
+    <h3>Worum es geht</h3>
     <div class="video-group">
 
         <div class="video-container">
@@ -21,11 +23,12 @@
 </section>
 
 <section class="section-b">
+    <h3>Kandidat*innen</h3>
     <div class="cards-container">
         <div class="card">
             <img src="../../img/placeholder.jpg" alt="Avatar" style="width:100%">
             <div class="container">
-                <h3 class="person-name">Marina Schmidt</h3>
+                <h4 class="person-name">Marina Schmidt</h4>
                 <p class="person-info">Studentin</p>
             </div>
         </div>
@@ -33,7 +36,7 @@
         <div class="card">
             <img src="../../img/placeholder.jpg" alt="Avatar" style="width:100%">
             <div class="container">
-                <h3 class="person-name">Sonya Waleska</h3>
+                <h4 class="person-name">Sonya Waleska</h4>
                 <p class="person-info">Künstlerin</p>
             </div>
         </div>
@@ -41,10 +44,30 @@
         <div class="card">
             <img src="../../img/placeholder.jpg" alt="Avatar" style="width:100%">
             <div class="container">
-                <h3 class="person-name">Marion Hummels</h3>
+                <h4 class="person-name">Marion Hummels</h4>
                 <p class="person-info">Künstlerin</p>
             </div>
         </div>
     </div>
 </section>
+
+<section class="section-a">
+    <h3>Die Videos</h3>
+    <div class="video-group">
+
+        <div class="video-container">
+            <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/d4FM0mITAx4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container">
+            <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/d4FM0mITAx4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container">
+            <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/d4FM0mITAx4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </div>
+</section>
+
 {{ end }}
