@@ -1,0 +1,19 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        {{ range (readDir "content/wir-bleiben-sichtbar/img/") }}
+        <div class="swiper-slide">
+            <img src="img/{{- .Name -}}" alt="">
+        </div>
+        {{ end }}
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+{{ end }}
