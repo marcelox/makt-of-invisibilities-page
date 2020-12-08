@@ -2,14 +2,20 @@
 
 {{ .Content }}
 
-<div class="swiper-container">
-    <div class="swiper-wrapper">
-        {{ range (readDir "content/gedenken-an-die-novemberpogrome/img/") }}
-        <div class="swiper-slide">
-            <img src="img/{{- .Name -}}" alt="">
-        </div>
-        {{ end }}
+<div class="video-group">
+
+    <div class="video-container">
+        <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/d4FM0mITAx4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
+
+    <div class="video-container">
+        <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/d4FM0mITAx4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-container">
+        <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/d4FM0mITAx4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
 </div>
 
 {{ end }}

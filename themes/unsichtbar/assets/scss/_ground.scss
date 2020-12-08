@@ -137,3 +137,14 @@ img {
     height: 100%;
   }
 }
+
+
+.video-group {
+  @include inner-paddings;
+  display: grid;
+  grid-gap: 2rem;
+
+  @include breakpoint(xxlarge) {
+	grid-template-columns: repeat(3, 1fr);
+  }
+}
