@@ -144,3 +144,39 @@ img {
 	grid-template-columns: repeat(3, 1fr);
   }
 }
+
+/// Es gibt nur eine page
+.cards-container {
+  @include inner-paddings;
+  @include vertical-spacings;
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+
+    .container {
+      padding: 2px 16px;
+
+      .person-name {
+        font-size: 2.5rem;
+      }
+
+      .person-info {
+        font-size: 1.5rem;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+  }
+}
+
+
+/* On mouse-over, add a deeper shadow */
+
+/* Add some padding inside the card container */
