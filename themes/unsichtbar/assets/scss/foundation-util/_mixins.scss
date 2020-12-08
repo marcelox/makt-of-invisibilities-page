@@ -311,3 +311,29 @@
     @content;
   }
 }
+
+////////////// CUSTOM mixins
+
+@mixin simpleGrid {
+  padding: 0 1.75rem;
+  @include breakpoint(medium) {
+    padding: 0 2rem;
+  }
+  @include breakpoint(large) {
+    padding: 0 3rem;
+  }
+  @include breakpoint(xlarge) {
+    padding: 0.5rem calc((100vw - 960px - 0.5rem) / 2);
+  }
+}
+
+@mixin inner-paddings {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+
+  @include breakpoint(xlarge) {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  };
+}
+
