@@ -3,7 +3,7 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
-        <main>
+        <main class="dark">
             {{- block "main" . }}{{- end }}
             <div class="page-nav next">{{with .Site.RegularPages.Prev . }}<a href="{{.RelPermalink}}"> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.924 197.848"><defs><style>.right-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:14px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polyline class="right-1" points="7 7 98.924 98.924 7 190.848"/></g></g></svg><span>{{.Title}}</span></a> {{end}}</div>
             <div class="page-nav previous">{{with .Site.RegularPages.Next . }}<a href="{{.RelPermalink}}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 105.924 197.848"><defs><style>.left-1{fill:none;stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:14px;}</style></defs><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><polyline class="left-1" points="98.924 190.848 7 98.924 98.924 7"/></g></g></svg> <span>{{.Title}}</span></a> {{end}}</div>

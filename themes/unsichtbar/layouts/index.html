@@ -1,20 +1,17 @@
 {{ define "main" }}
-    <div class="divider-w-text">
-        <div class="intro">
-            <p>Im Jahr 2020 hat sich der Freie Bühne Jena e.V. das Thema <span class="title-font">Unsichtbarkeit</span> zum Gegenstand der künstlerischen Auseinandersetzung gewählt. Im Probenprozess sind viele verschiedene Produktionen entstanden.</p>
-            <p>Diese wollen wir nun noch einmal Revue passieren lassen und eine Auswahl an Ergebnissen und eine neue Überraschungen präsentieren. Denn auch wir waren und sind von Unsichtbarkeit bedroht...</p>
-        </div>
-        <nav class="projects-nav">
-            {{ range first 12 .Site.RegularPages }}
-            <a class="projects-nav-item" href="{{ .RelPermalink }}" style="background-image: url('{{ if .Params.image }}{{ .RelPermalink }}{{ end }}{{ with .Params.image }}{{ . }}{{ else }}/img/placeholder_abstract.jpg{{ end }}')">
-                <h2>{{- .Title -}}</h2>
-            </a>
-            {{ end }}
-        </nav>
-    </div>
-    <svg class="divider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 184.892"><defs></defs><path class="a" d="M42.19,122.792c26.393.548,52.69,3.973,78.656,8.578,48.6,8.62,99.84,28.554,151.126,24.185,52.747-4.494,105.8-28.668,157.207-41.091,51.39-12.419,101.067-13.674,154.279-10.687a300.94,300.94,0,0,1,46.071,6.33c32.931,7.049,65.491,16.6,97.5,27.021,45.7,14.881,88.427,40.4,136.859,44.908,89.821,8.36,151.645-46.4,228.659-81.253a375.577,375.577,0,0,1,50.445-18.919c34.724-10.034,71.274-21.185,107.625-25.2,28.45-3.143,57.447-1.586,85.934-1.182a280.782,280.782,0,0,1,28.654,1.668c36.63,4.275,72.971,15.776,107.662,27.246,36.177,11.963,68.5,31.7,100.411,52.108q1.727-.315,3.45-.646c10-3.159,19.957-6.461,29.913-9.766,36.9-12.249,73.87-22.376,111.612-32.156,33.576-8.7,67.566-14.963,102.3-16.048,32.865-1.027,66.367-1.567,99.441,1.28V0H0V121.845C14.24,122,28.411,122.506,42.19,122.792Z"/>
-    </svg>
-
-
-
+<div class="intro">
+    <p>Im Jahr 2020 hat sich der Freie Bühne Jena e.V. das Thema <span class="title-font">Unsichtbarkeit</span> zum
+        Gegenstand der künstlerischen Auseinandersetzung gewählt. Im Probenprozess sind viele verschiedene Produktionen
+        entstanden.</p>
+    <p>Diese wollen wir nun noch einmal Revue passieren lassen und eine Auswahl an Ergebnissen und eine neue
+        Überraschungen präsentieren. Denn auch wir waren und sind von Unsichtbarkeit bedroht...</p>
+</div>
+<nav class="projects-nav">
+    {{ range first 12 .Site.RegularPages }}
+    <a class="projects-nav-item" href="{{ .RelPermalink }}"
+       style="background-image: url('{{ if .Params.image }}{{ .RelPermalink }}{{ end }}{{ with .Params.image }}{{ . }}{{ else }}/img/placeholder_abstract.jpg{{ end }}')">
+        <h2>{{- .Title -}}</h2>
+    </a>
+    {{ end }}
+</nav>
 {{ end }}

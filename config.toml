@@ -6,7 +6,7 @@ theme = "unsichtbar"
 DefaultContentLanguage = "de"
 
 [params]
-    description = "Projekt der freien Bühne Jena"
+    description = "Die digitale Werkschau des freie-Bühne-Ensembles und Ateliers"
 
 [sitemap]
   changefreq = "monthly"

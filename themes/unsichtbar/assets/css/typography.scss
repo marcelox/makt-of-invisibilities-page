@@ -28,9 +28,13 @@ body {
 @for $i from 1 through 6 {
   h#{$i} {
     color: var(--fb-dark);
+    .dark & {
+      color: var(--white);
+    }
     font-size: var(--h#{$i});
 	font-family: 'Agency FB Bd Cond', "Helvetica Neue", sans-serif;
     font-weight: normal;
+    text-align: center;
   }
 }
 
@@ -40,13 +44,15 @@ body {
 }
 
 p {
-  @include inner-paddings;
+  @include inner-margins;
   font-family: 'Mada', sans-serif;
-  //font-family: myriad-pro-semi-condensed, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.5rem;
   line-height: 1.5;
+  .dark & {
+    color: var(--white);
+  }
 
   @include breakpoint(xlarge) {
     font-size: 3.75rem;
@@ -57,7 +63,7 @@ p {
 main {
   @for $i from 1 through 6 {
     h#{$i} {
-      @include inner-paddings;
+      @include inner-margins;
     }
   }
 }
