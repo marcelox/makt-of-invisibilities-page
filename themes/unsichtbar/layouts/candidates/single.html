@@ -1,0 +1,20 @@
+{{ define "main" }}
+
+<h2>{{ .Title }}</h2>
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        {{ range .Params.posts}}
+        <div class="swiper-slide">
+            <img src="{{- .img -}}" alt="{{ .alt }}">
+        </div>
+        {{ end }}
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+
+{{ .Content }}
+
+{{ end }}
