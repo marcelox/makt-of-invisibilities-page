@@ -18,6 +18,13 @@
 
   &.sticky {
 	height: var(--header-fixed-height);
+    box-shadow: 1px 3px 12px -2px grey;
+	left: 0;
+    right: 0;
+
+    .fb-logo {
+      margin-right: var(--passepartout);
+    }
   }
 }
 

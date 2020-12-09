@@ -5,7 +5,7 @@
     {{ .Content }}
 </section>
 
-<section class="section-a">
+<section class="section-a" style="display: none">
     <h3>Worum es geht</h3>
     <div class="video-group">
 
@@ -25,31 +25,18 @@
 </section>
 
 <section class="section-b">
-    <h3>Kandidat*innen</h3>
+    <h3>Die Kandidat*innen</h3>
     <div class="cards-container">
-        <div class="card">
-            <img src="../../img/placeholder.jpg" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4 class="person-name">Marina Schmidt</h4>
-                <p class="person-info">Studentin</p>
+        {{range .Params.resources}}
+            <div class="card">
+                <video controls>
+                    <source src="{{.video}}">
+                </video>
+                <div class="container">
+                    <h4 class="person-name">{{.name}}</h4>
+                </div>
             </div>
-        </div>
-
-        <div class="card">
-            <img src="../../img/placeholder.jpg" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4 class="person-name">Sonya Waleska</h4>
-                <p class="person-info">Künstlerin</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <img src="../../img/placeholder.jpg" alt="Avatar" style="width:100%">
-            <div class="container">
-                <h4 class="person-name">Marion Hummels</h4>
-                <p class="person-info">Künstlerin</p>
-            </div>
-        </div>
+        {{end}}
     </div>
 </section>
 

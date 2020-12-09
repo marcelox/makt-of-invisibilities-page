@@ -4,6 +4,8 @@
 /public/
 /resources/_gen/
 
+*.mp4
+*.MOV
 # Executable may be added to repository
 hugo.exe
 hugo.darwin

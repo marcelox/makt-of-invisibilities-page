@@ -1,5 +1,21 @@
 footer {
   p, a {
     font-size: 1.2rem;
+    text-align: center;
+    display: block;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--fb-green);
+	font-family: 'Agency FB Bd Cond', "Helvetica Neue", sans-serif;
+    font-size: 2rem;
+    transition: color 450ms;
+
+    &:hover {
+      color: var(--fb-dark);
+    }
   }
 }
