@@ -1,7 +1,7 @@
 ---
 title: "Es Kann Nur Eine*n Geben"
 date: 2020-12-06T17:39:33+01:00
-draft: true
+draft: false
 type: "nur-eine"
 weight: 1
 resources: 
