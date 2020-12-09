@@ -51,3 +51,10 @@ resources:
 
 In der Show »Es kann nur eine\*n geben« bewerben sich verschiedene Menschen, die von der Coronakrise betroffen sind, für den Titel __Mr.\*Miss. Sichtbar__. Der\*die Gewinner\*in erhält eine monatliche Vergütung, um über die Krisenzeit zu kommen. Selbstverständlich müssen die Kandidat*innen zunächst ihre Systemrelevanz, ihren Unterhaltungswert und ihre Beliebtheit unter Beweis stellen.
 
+
+{{< youtube 6NZdV3ayQH0 >}}
+
+[comment]: <> ({{< youtube lgj2U8hBdwI >}})
+
+[comment]: <> ({{< youtube hbF9z-06H5U >}})
+
