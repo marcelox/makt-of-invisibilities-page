@@ -23,7 +23,9 @@
     right: 0;
 
     .fb-logo {
-      margin-right: var(--passepartout);
+      @include breakpoint($passepartout-breakpoint) {
+        margin-right: var(--passepartout);
+      }
     }
   }
 }
@@ -40,6 +42,7 @@
   }
 
   svg {
+    max-width: 300px;
     width: 100%;
     height: 100px;
 
@@ -109,7 +112,10 @@
   top: 1rem;
   right: -.125rem;
   display: block;
-  width: 8rem;
+  width: 5rem;
+  @include breakpoint(xlarge) {
+    width: 8rem;
+  }
 
   .background-fb-logo {
     fill: var(--fb-green);
