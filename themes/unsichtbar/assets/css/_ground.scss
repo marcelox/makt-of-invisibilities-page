@@ -9,6 +9,8 @@ html {
   --petrol: rgb(79, 183, 152);
   --back: #ffe9d9;
 
+  --back2: #e8e8e8;
+
   --passepartout: 4rem;
 
   --header-height: 5rem;
@@ -231,11 +233,14 @@ img {
 }
 
 .section-b {
-  background-color: var(--white);
+  background-color: var(--back2);
   h3 {
     color: var(--fb-dark);
     font-size: 5rem;
     margin-bottom: 4rem;
+	@include breakpoint(xlarge) {
+      margin-top: -1rem;
+	}
   }
 }
 
