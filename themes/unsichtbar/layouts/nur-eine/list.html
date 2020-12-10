@@ -49,7 +49,7 @@
                 </div>
                 <div class="container">
                     <h4 class="person-name">{{ .Title }}</h4>
-                    <a class="button" href="{{ .RelPermalink }}">Beiträge</a>
+                    {{ if .Params.noposts }}{{ else }}<a class="button" href="{{ .RelPermalink }}">Beiträge</a>{{ end }}
                 </div>
             </div>
         {{end}}
