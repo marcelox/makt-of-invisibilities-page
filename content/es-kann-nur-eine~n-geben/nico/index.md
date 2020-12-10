@@ -5,3 +5,4 @@ draft: true
 youtube: "iDBJoSiM1Og"
 ---
 
+{{< video "./Fotostory_Niko.webm" >}}
