@@ -5,13 +5,13 @@ draft: true
 youtube: "IMDQnhqlWqI"
 type: "candidates"
 posts:
-    - img: "./IMG_20201208_140534_834.jpg"
+    - img: "./rolf-1.jpg"
       alt: "Maskenverweigerer suchen und melden"
       caption: "Maskenverweigerer suchen und melden"
-    - img: "./IMG_20201208_140540_615.jpg"
+    - img: "./rolf-2.jpg"
       alt: "Maskenverweigerer suchen und melden"
       caption: "Maskenverweigerer suchen und melden"
-    - img: "./IMG_20201208_140546_077.jpg"
+    - img: "./rolf-3.jpg"
       alt: "Alternative"
       caption: "caption"
 ---
