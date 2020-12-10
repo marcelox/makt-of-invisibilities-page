@@ -86,8 +86,12 @@ main {
   }
 
   .page-nav {
-    position: fixed;
-    top: 50%;
+	display: none;
+    @include breakpoint($passepartout-breakpoint) {
+      display: block;
+      position: fixed;
+    }
+      top: 44%;
 	width: 3rem;
 
     &.next, &.previous {
@@ -114,10 +118,19 @@ main {
         }
       }
     }
-    &.previous:hover {
+
+    &.previous {
       span {
-        left: 0;
-        right: auto;
+		left: 0;
+        @include breakpoint($passepartout-breakpoint) {
+          left: auto;
+        }
+      }
+      &:hover {
+        span {
+          left: 0;
+          right: auto;
+        }
       }
     }
 
@@ -126,7 +139,9 @@ main {
 	  margin-right: .5rem;
 
       span {
-        transform: translateX(20rem);
+        @include breakpoint($passepartout-breakpoint) {
+          transform: translateX(20rem);
+        }
       }
     }
     &.previous {
@@ -134,7 +149,9 @@ main {
       margin-left: .5rem;
 
       span {
-        transform: translateX(-20rem);
+        @include breakpoint($passepartout-breakpoint) {
+          transform: translateX(-20rem);
+        }
       }
     }
   }
