@@ -91,18 +91,33 @@ main {
 	width: 3rem;
 
     &.next, &.previous {
+      z-index: 1;
       //overflow: hidden;
 
       span {
+        font-family: 'Agency FB Bd Cond', "Helvetica Neue", sans-serif;
+        font-size: 2rem;
+        position: absolute;
+        right: 0;
+        top: 0;
         display: block;
-        width: 200px;
-        background-color: var(--fb-dark);
+        width: 12rem;
+        padding: 1.5rem;
+        background-color: var(--white);
+        color: var(--fb-dark);
+		border-radius: $border-radius;
       }
 
 	  &:hover {
         span {
           animation: clear 450ms forwards;
         }
+      }
+    }
+    &.previous:hover {
+      span {
+        left: 0;
+        right: auto;
       }
     }
 
