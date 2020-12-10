@@ -1,5 +1,9 @@
 // import Swiper styles
-import Swiper from "swiper";
+import Swiper, { Navigation, Pagination } from 'swiper';
+
+// configure Swiper to use modules
+Swiper.use([Navigation, Pagination]);
+
 
 const mySwiper = new Swiper('.swiper-container', {
     // Optional parameters
@@ -10,6 +14,7 @@ const mySwiper = new Swiper('.swiper-container', {
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
+        type: 'bullets'
     },
 
     // Navigation arrows
@@ -17,11 +22,7 @@ const mySwiper = new Swiper('.swiper-container', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
+    grabCursor: true,
 });
 // Fotokampagne = wirbleibensichtbar
 // Mocumentary = Viraler Adventskalender
