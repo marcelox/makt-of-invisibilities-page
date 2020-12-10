@@ -6,6 +6,7 @@
 
 *.mp4
 *.MOV
+*.webm
 # Executable may be added to repository
 hugo.exe
 hugo.darwin
