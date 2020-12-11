@@ -16,7 +16,6 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mada:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.typekit.net/jyv0cyv.css">
     <link href="//cloud.typenetwork.com/projects/4554/fontface.css/" rel="stylesheet" type="text/css">
     {{ $style := resources.Get "css/main.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
     <link rel="stylesheet" href="{{ $style.RelPermalink }}">
