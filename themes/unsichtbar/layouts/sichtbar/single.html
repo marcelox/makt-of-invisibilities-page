@@ -1,0 +1,49 @@
+{{ define "main" }}
+
+<article class="candidates-wrapper">
+    <header class="candidates-title">
+        <h2>{{ .Title }}</h2>
+    </header>
+    <div class="candidates-content">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {{ range .Params.posts}}
+                <div class="swiper-slide">
+                    <figure class="posters-sichtbar">
+                        <img src="./img/Plakat_{{- .img -}}" alt="">
+                        <figcaption>{{ with .caption }}{{ . }}{{ else }}#wirbleibensichtbar{{ end }}</figcaption>
+                    </figure>
+                </div>
+                {{ end }}
+            </div>
+            <div class="slider-nav-wrapper">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
+        {{ .Content }}
+
+    </div>
+</article>
+<section class="section-a">
+    <h2>#wirbleibensichtbar</h2>
+    {{ .Content }}
+    <div class="video-group" style="padding-top: 3rem; padding-bottom: 3rem">
+
+        <div class="video-container">
+            <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/7Xnn_J25dis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container">
+            <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/WzrJl7-dfHk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="video-container">
+            <iframe class="responsive-iframe" width="560" height="315" src="https://www.youtube.com/embed/2XMYXqgiZsE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
+{{ end }}
