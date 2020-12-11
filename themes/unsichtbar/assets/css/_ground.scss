@@ -281,6 +281,34 @@ img {
   }
 }
 
+@include breakpoint(xxlarge) {
+
+  .candidates-wrapper {
+    margin-top: 5rem;
+	margin-left: auto;
+    margin-right: auto;
+	display: grid;
+    grid-template-columns: 30% 1fr;
+
+    .candidates-title {
+      padding-left: 4rem;
+      padding-right: 1rem;
+
+      h2 {
+		font-size: 6rem;
+        max-width: 100%;
+        padding: 2rem;
+        text-align: left;
+      }
+    }
+    .candidates-content {
+      .swiper-container {
+        max-width: 45vw;
+      }
+    }
+  }
+}
+
 .section-b {
   background-color: var(--back2);
   h3 {
