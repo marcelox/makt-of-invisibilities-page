@@ -1,7 +1,7 @@
 ---
 title: "Rolf"
 date: 2020-12-09T23:33:41+01:00
-draft: true
+draft: false
 youtube: "IMDQnhqlWqI"
 type: "candidates"
 posts:

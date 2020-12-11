@@ -1,8 +1,9 @@
 ---
 title: "Nico"
 date: 2020-12-09T23:32:40+01:00
-draft: true
+draft: false
 youtube: "iDBJoSiM1Og"
+type: "candidates"
 ---
 
 {{< video "./Fotostory_Niko.webm" "webm" >}}
