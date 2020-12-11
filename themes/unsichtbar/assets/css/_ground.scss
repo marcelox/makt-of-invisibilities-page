@@ -281,6 +281,12 @@ img {
   }
 }
 
+.posters-sichtbar {
+  figcaption {
+    color: var(--white);
+  }
+}
+
 @include breakpoint(xxlarge) {
 
   .candidates-wrapper {
@@ -299,6 +305,7 @@ img {
         max-width: 100%;
         padding: 2rem;
         text-align: left;
+        line-height: 1.2;
       }
     }
     .candidates-content {
