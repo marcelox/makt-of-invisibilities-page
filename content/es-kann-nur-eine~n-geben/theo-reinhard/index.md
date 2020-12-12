@@ -19,3 +19,5 @@ posts:
       alt: "Theo kocht und sagt yummy"
 ---
 
+
+Hat selbst noch keine Kinder, ist aber sehr am Wohlergehen der Jugend interessiert. Theo kennt sich mit Wein aus, Rumtopf, lokalen Biospezialitäten und versucht auf Fleisch zu verzichten, auch wenn es nicht klappt. Ist Fan erzgebirgischer Weihnachtslieder und hasst die Agrarlobby (interessiert sich aber für Landmaschinen aus der DDR). Er jobbt gerade als Aushilfe, da das Schulessen runtergefahren wurde.

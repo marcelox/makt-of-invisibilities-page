@@ -28,7 +28,7 @@ posts:
     caption: "Ich muss dieses Jahr alleine spielen"
   - img: "Johanna.jpg"
     alt: ""
-    caption: "Aufgeschoben ist nicht aufgehoben Pleite!"
+    caption: "Aufgeschoben ist -n-i-c-h-t- -a-u-f-g-e-h-o-b-e-n- Pleite!"
   - img: "Katharina.jpg"
     alt: ""
     caption: "Ich kann nur durch digitale Technik sichtbar bleiben."

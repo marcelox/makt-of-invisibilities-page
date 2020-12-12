@@ -51,6 +51,12 @@ resources:
 
 In der Show »Es kann nur eine\*n geben« bewerben sich verschiedene Menschen, die von der Coronakrise betroffen sind, für den Titel __Mr.\*Miss. Sichtbar__. Der\*die Gewinner\*in erhält eine monatliche Vergütung, um über die Krisenzeit zu kommen. Selbstverständlich müssen die Kandidat*innen zunächst ihre Systemrelevanz, ihren Unterhaltungswert und ihre Beliebtheit unter Beweis stellen.
 
+Heute Abend, Samstag, den 12.12\
+Einlass: 19:45\
+Showstart: 20:15
+
+[Zugang über Zoom-Meeting](https://zoom.us/j/91005321939?pwd=ZC93NlRCOFBZcThIUGRuVVNsVFcyZz09).\
+Passwort: Tonight
 
 [comment]: <> ({{< youtube 6NZdV3ayQH0 >}})
 

@@ -5,6 +5,7 @@ html {
   --fb-pink: #f397ac;
   --fb-blue: #00aeef;
   --white: ghostwhite;
+  --link: beige;
 
   --darkred: rgb(138,16,2);
   --petrol: rgb(79, 183, 152);
@@ -49,6 +50,16 @@ main {
 
   &.dark {
     background-color: var(--fb-dark);
+
+    p {
+      a {
+        color: var(--link);
+
+        &:hover {
+          text-decoration: overline underline;
+        }
+      }
+    }
   }
 
   .sticky + & {
@@ -287,6 +298,26 @@ img {
   }
 }
 
+.candidates-description p {
+  @include breakpoint(xlarge only) {
+    padding: 1rem;
+    font-size: 2.25rem;
+  }
+
+  @include breakpoint(xxlarge only) {
+    font-size: 1.75rem;
+  }
+
+  @include breakpoint(xxxlarge) {
+    font-size: 2.5rem;
+  }
+
+  a {
+    color: var(--link);
+    text-decoration: underline;
+  }
+}
+
 @include breakpoint(xxlarge) {
 
   .candidates-wrapper {
@@ -303,10 +334,10 @@ img {
       h2 {
 		font-size: 6rem;
         max-width: 100%;
-        padding: 2rem;
         text-align: left;
         line-height: 1.2;
       }
+
     }
     .candidates-content {
       .swiper-container {

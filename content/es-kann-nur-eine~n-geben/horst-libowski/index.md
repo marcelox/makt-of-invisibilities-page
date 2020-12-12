@@ -19,3 +19,5 @@ posts:
       caption: ""
 ---
 
+
+Schaffte seinen Durchbruch als Schauspieler in der Fernsehserie "Gute Drachen, Böse Drachen". Ist seit dem in Zahlreichen Kino- und Theaterproduktionen aufgetreten. Seit Anbeginn der Pandemie hat er keinerlei Rollen mehr bekommen. Da er süchtig nach Scheinwerferlicht ist, leidet er sehr darunter. Auch das er als Moderator für die Show "es kann nur eine\*n geben" abgelehnt wurde. Daher stellt er sich nun als Kandidat auf.

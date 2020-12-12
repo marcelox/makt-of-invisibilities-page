@@ -1,9 +1,10 @@
 {{ define "main" }}
 
 <article class="candidates-wrapper">
-    <header class="candidates-title">
+    <section class="candidates-title">
         <h2>{{ .Title }}</h2>
-    </header>
+        <article class="candidates-description">{{ .Content }}</article>
+    </section>
     <div class="candidates-content">
         <div class="swiper-container">
             <div class="swiper-wrapper">
@@ -29,7 +30,6 @@
             <div class="swiper-pagination"></div>
         </div>
 
-        {{ .Content }}
 
     </div>
 </article>

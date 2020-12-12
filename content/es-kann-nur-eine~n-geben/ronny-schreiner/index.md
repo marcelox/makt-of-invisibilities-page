@@ -31,3 +31,7 @@ posts:
       caption: ""
 ---
 
+„In Kreisbewegungen gleitest Du langsam auf kein Ziel, zu um dir näherzukommen.“ (Kalysto Puper – Autorin) 
+
+„Einfach mal nicht irre machen lassen!“ 
+(Ronny Schreiner) Labyrinthe-Experte, Handlanger und Barkeeper

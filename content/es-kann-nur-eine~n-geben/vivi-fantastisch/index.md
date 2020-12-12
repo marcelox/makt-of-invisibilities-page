@@ -40,3 +40,5 @@ posts:
       caption: ""
 ---
 
+
+ist eure erste Ansprechpartnerin für Lifestyle und Alltagsgestaltung. Egal was ist, sie hat‘s einfach drauf!

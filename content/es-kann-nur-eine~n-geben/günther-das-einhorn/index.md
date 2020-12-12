@@ -52,3 +52,9 @@ posts:
     - video: "./guenther-vid-3.mp4"
 ---
 
+Ich glitzere und flitze durch die Gegend wie ein Wirbelsturm,
+außer in Zeiten von Corona, da bin ich eingesperrt, in meinem Turm.
+Für gutes Essen, Glück und Liebe verantwortlich zu sein ist fein,
+„Es kann nur einen geben“? Der Sieg ist mein.
+Denn was wäre die Welt ohne Glück und Liebe,
+außer ein Ort harter Hiebe, voller Hass und lauter Diebe?
