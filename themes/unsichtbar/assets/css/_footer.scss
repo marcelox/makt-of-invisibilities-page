@@ -2,34 +2,38 @@ footer {
   display: flex;
   justify-content: center;
 
-  p, a {
-    font-size: 1.2rem;
-    text-align: center;
-    display: block;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
+  ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
 
-  a {
-    text-decoration: none;
-    color: var(--green-a11y);
-	font-family: 'Agency FB Bd Cond', "Helvetica Neue", sans-serif;
-    font-size: 2rem;
-    transition: color 450ms;
+    li {
+      display: flex;
+      align-items: center;
 
-    &:hover {
-      text-decoration: overline underline;
-      color: var(--fb-dark);
-    }
-
-    &:after {
-      padding-left: .5rem;
-      padding-right: .5rem;
-      content: "\2022";
-    }
-
-    &:last-child:after {
-      content: none;
+      a {
+        text-align: center;
+        display: block;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-decoration: none;
+        color: var(--green-a11y);
+        font-family: 'Agency FB Bd Cond', "Helvetica Neue", sans-serif;
+        font-size: 2rem;
+        transition: color 450ms;
+        &:hover, &:focus {
+          text-decoration: overline underline;
+          color: var(--fb-dark);
+        }
+      }
+      &:after {
+        padding-left: .5rem;
+        padding-right: .5rem;
+        content: "\2022";
+      }
+      &:last-child:after {
+        content: none;
+      }
     }
   }
 }
