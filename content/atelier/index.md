@@ -66,6 +66,18 @@ In den Sommermonaten war es dem Freie Bühne Atelier möglich die Proben im öff
 {{< youtube QsWCEXTkHpI >}}
 {{< /section >}}
 
+{{< section class="section-a atelier-section" >}}
+{{< div class="atelier-info" >}}
+
+<h2>Straßenpflaster-Festspiele</h2>
+<h3>Jena, 12. September 2020. </h3>
+
+Vom 25. Juli bis 26. September 2020 fanden in Jena die Straßenpflaster-Festspiele statt, ein dezentrales Festival mit rund 40 künstlerischen Gruppen. Am 12. September hat das Freie Bühne Atelier bei vier Auftritten in der Johannisstraße und auf dem Marktplatz dargestellt, wie Kultur sichtbar wird und wie wir selbst sichtbar werden. Die zunächst autark nebeneinander laufenden Schauspieler*innen haben Blickkontakt mit ihren Nachbar*innen aufgenommen, zunehmend interagiert und durch Zitate ihre Standpunkte bekräftigt. Die Loop-Musik von Luziluu nahm Zitate und Bewegungen auf.
+
+{{< /div >}}
+{{< youtube djoP9C14O7g >}}
+{{< /section >}}
+
 
 "Die vermisste Freundin" Begib dich auf die Suche nach Bianca und lerne dabei eine Reihe von verrückter Charaktere kennen. https://actionbound.com/bound/woistbiancaa
 "Kunst zum Überleben" https://actionbound.com/bound/kunstzumueberlebenfbj
