@@ -54,6 +54,18 @@ Nachdem im Freie Bühne Atelier schon einige Wochen über die App Actionbound ge
 {{< youtube 7kve59zxTRU >}}
 {{< /section >}}
 
+{{< section class="section-a atelier-section" >}}
+{{< div class="atelier-info" >}}
+
+<h2>Proben im öffentlichen Raum</h2>
+<h3>Jena, Juni bis August 2020. </h3>
+
+In den Sommermonaten war es dem Freie Bühne Atelier möglich die Proben im öffentlichen Raum stattfinden zu lassen. Die Proben waren angemeldet und zum Teil mit Kundgebungen verknüpft, so wie am 15.06. auf dem Jenaer Marktplatz und am 22.06. in der Johannisstraße. Eine Mischung aus Probe und Interventionen im öffentlichen Raum. Da bereits auf die Actionboundaufführung "Stadtgeflüster" Mitte August im Jenaer Zentrum hingearbeitet wurde, erfolgten Strasseninterviews zum Thema "Was ist Dein Rezept in einer Krise?". Die Tonaufnahmen sind bei dieser Zusammenstellung von Videos aus den Proben und Aktionen ebenfalls zu hören.
+
+{{< /div >}}
+{{< youtube QsWCEXTkHpI >}}
+{{< /section >}}
+
 
 "Die vermisste Freundin" Begib dich auf die Suche nach Bianca und lerne dabei eine Reihe von verrückter Charaktere kennen. https://actionbound.com/bound/woistbiancaa
 "Kunst zum Überleben" https://actionbound.com/bound/kunstzumueberlebenfbj
