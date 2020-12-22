@@ -511,7 +511,38 @@ img {
   }
 
   &-info {
-	@include paddings
+	@include paddings;
   }
 }
 
+.atelier {
+
+  h2, h3, h4 {
+    &:not(.page-title) {
+      text-align: left;
+      margin-bottom: 0;
+      //font-size: 5rem; TODO: consistent heading sizes please
+    }
+  }
+  .atelier-section {
+    display: flex;
+    color: white;
+    flex-direction: column;
+
+    .atelier-info {
+      margin-bottom: 2rem;
+    }
+
+    @include breakpoint(xxlarge) {
+      flex-direction: row;
+      align-items: center;
+
+      .atelier-info {
+        flex: 0 0 50%;
+        margin-right: 2rem;
+        margin-bottom: 0;
+
+      }
+    }
+  }
+}

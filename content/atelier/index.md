@@ -1,24 +1,58 @@
 ---
-title: "Atelier"
+title: "Freie Bühne Atelier"
 date: 2020-12-05T23:26:29+01:00
 draft: true
+class: "atelier"
 ---
 
-### Deutschland, der 22.März 2020. 
+### Deutschland, der 17. März 2020. 
 Die Bundesregierung beschließt das öffentliche Leben komplett runterzufahren, um den Gefahren der Epidemie Einhalt zu gebieten.
 
-### Jena, der 23.März 2020. 
+### Jena, der 18. März 2020. 
 Das Ensemble des Freie Bühne Jena e.V. sagt alle Veranstaltungen für April und Mai ab. Zusätzlich wird ein digitales Probenkonzept entwickelt.
 
-### Jena, der 30.März 2020. 
+### Jena, der 23. März 2020. 
 In einer Videokonferenz trifft sich das Atelier des Freie Bühne Jena e.V. das erste mal zu einer digitalen Probe. Dieser erfolgreiche Auftakt wird in den nächsten Wochen weiter ausgebaut.
-
-### Internet, der 03.Mai 2020. 
-Auf der YouTube-Präsenz des Freie Bühne Jena e.V. erscheint ein Video über die digitalen Proben. 
 
 ---
 
- Im Mai erstellte das Atelier in Gruppenarbeit ganz unterschiedliche Actionbounds, also digital unterstützte Spiele, Meditationen, Rollenspiele und Abenteuer. Falls ihr diese selbst spielen oder einfach nur anschauen  wollt, ladet euch einfach die kostenlose App auf euer mobiles Endgerät! Wie das funktioniert seht ihr hier: https://actionbound.com/
+{{< section class="section-a atelier-section" >}}
+{{< div class="atelier-info" >}}
+
+<h2>Atelierstatement</h2>
+<h3>Internet, der 08. April 2020. </h3>
+
+Auf der YouTube-Präsenz des Freie Bühne Jena e.V. erscheint ein erstes Video, zusammengeschnitten von Maik Pevestorff aus dem Material der digitalen Proben.
+
+{{< /div >}}
+{{< youtube 3KFUw8m-m6c >}}
+{{< /section >}}
+
+
+{{< section class="section-a atelier-section" >}}
+{{< div class="atelier-info" >}}
+
+<h2>Die Monologe</h2>
+<h3>Internet, April 2020. </h3>
+
+Nachdem die Proben digital durchgeführt werden mussten sind die zuvor bei den Proben entstandenen Monologe von einzelnen Personen per Video zu Hause umgesetzt worden. Das ist eine Zusammenstellung einer Auswahl der Videos welche im April 2020 im Freie Bühne Atelier entstanden sind. Ein Zusammenschnitt von André Helbig.
+
+{{< /div >}}
+{{< youtube 7RTSbNiage0 >}}
+{{< /section >}}
+
+
+{{< section class="section-a atelier-section" >}}
+{{< div class="atelier-info" >}}
+
+<h2>Material aus Actionbound</h2>
+<h3>Internet, 3. Mai 2020. </h3>
+
+Nachdem im Freie Bühne Atelier schon einige Wochen über die App Actionbound geprobt wurde, erfolgte ein weiterer Zusammenschnitt von Material welches über die App gesammelt wurde. Heraus kam ein etwas experimentelleres Video, geschnitten von André Helbig.
+
+{{< /div >}}
+{{< youtube 7kve59zxTRU >}}
+{{< /section >}}
 
 
 "Die vermisste Freundin" Begib dich auf die Suche nach Bianca und lerne dabei eine Reihe von verrückter Charaktere kennen. https://actionbound.com/bound/woistbiancaa

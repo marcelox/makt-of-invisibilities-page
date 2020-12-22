@@ -1,6 +1,6 @@
 {{ define "main" }}
-<section class="section-a">
-    <h2>{{ .Page.Title }}</h2>
+<div class="section-a{{ with .Params.class }} {{ . }}{{ end }}">
+    <h2 class="page-title">{{ .Page.Title }}</h2>
     {{ .Content }}
-</section>
+</div>
 {{ end }}
