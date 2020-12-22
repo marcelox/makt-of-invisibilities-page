@@ -6,11 +6,11 @@ theme = "unsichtbar"
 DefaultContentLanguage = "de"
 
 [params]
-    description = "Die digitale Werkschau des freie-Bühne-Ensembles und Ateliers"
+  description = "Die digitale Werkschau des freie-Bühne-Ensembles und Ateliers"
+  featured_image = "/images/freienbuhne.jpg"
+  favicon = ""
 
 [sitemap]
   changefreq = "monthly"
   priority = 0.5
   filename = "sitemap.xml"
-  featured_image = "/images/freienbuhne.jpg"
-  favicon = ""

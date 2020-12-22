@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+
+<section class="ensemble">
+    <header>
+        <h2>{{ .Title }}</h2>
+    </header>
+
+    <ul class="ensemble-list">
+        {{ range .Params.resources }}
+        <li class="ensemble-member">
+            <figure class="ensemble-member-info">
+                <img class="ensemble-member-foto" src="{{ .img }}" alt="{{ .name }}"/>
+                <figcaption>
+                    <h4 class="ensemble-member-name">{{ .name }}</h4>
+                    <p class="ensemble-member-role">{{ .role }}</p>
+                </figcaption>
+            </figure>
+        </li>
+        {{ end }}
+    </ul>
+
+
+</section>
+
+<section class="ensemble-info">
+    {{ .Content }}
+</section>
+
+{{ end }}

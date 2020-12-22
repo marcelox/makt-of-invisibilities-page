@@ -2,6 +2,29 @@
 title: "Ensemble"
 date: 2020-12-06T17:36:46+01:00
 draft: true
+type: "ensemble"
+resources:
+    - img: "./img/andre.jpg"
+      name: "André Helbig"
+      role: "Fotografie, Video, Produktion, Öffentlichkeitsarbeit"
+    - img: "./img/charlott.jpg"
+      name: "Charlott Zerna"
+      role: "Produktion, Tanz, Öffentlichkeitsarbeit"
+    - img: "./img/franziska.jpg"
+      name: "Franziska Brandt"
+      role: "Regie, Dramaturgie"
+    - img: "./img/katharina.jpg"
+      name: "Katharina Flinner"
+      role: "Produktion, Regie"
+    - img: "./img/ludwig.jpg"
+      name: "Ludwig Hettmann"
+      role: "Regie, Produktion, Öffentlichkeitsarbeit"
+    - img: "./img/maik.jpg"
+      name: "Maik Pevestorff"
+      role: "Regie, Probenleitung, Produktion"
+    - img: "./img/martin.jpg"
+      name: "Martin Zinnow"
+      role: "Regie, Requisite"
 ---
 
 
