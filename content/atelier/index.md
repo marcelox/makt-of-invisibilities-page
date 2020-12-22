@@ -5,16 +5,24 @@ draft: true
 class: "atelier"
 ---
 
-### Deutschland, der 17. März 2020. 
-Die Bundesregierung beschließt das öffentliche Leben komplett runterzufahren, um den Gefahren der Epidemie Einhalt zu gebieten.
+{{< section class="section-a atelier-diary" >}}
 
-### Jena, der 18. März 2020. 
-Das Ensemble des Freie Bühne Jena e.V. sagt alle Veranstaltungen für April und Mai ab. Zusätzlich wird ein digitales Probenkonzept entwickelt.
 
-### Jena, der 23. März 2020. 
-In einer Videokonferenz trifft sich das Atelier des Freie Bühne Jena e.V. das erste mal zu einer digitalen Probe. Dieser erfolgreiche Auftakt wird in den nächsten Wochen weiter ausgebaut.
+{{< div class="atelier-day" >}}
+<h3>Deutschland, der 17. März 2020.</h3>
+<p>Die Bundesregierung beschließt das öffentliche Leben komplett runterzufahren, um den Gefahren der Epidemie Einhalt zu gebieten.</p>
+{{< /div >}}
 
----
+{{< div class="atelier-day" >}}
+<h3> Jena, der 18. März 2020. </h3>
+<p>Das Ensemble des Freie Bühne Jena e.V. sagt alle Veranstaltungen für April und Mai ab. Zusätzlich wird ein digitales Probenkonzept entwickelt.</p>
+{{< /div >}}
+
+{{< div class="atelier-day" >}}
+<h3> Jena, der 23. März 2020. </h3>
+<p>In einer Videokonferenz trifft sich das Atelier des Freie Bühne Jena e.V. das erste mal zu einer digitalen Probe. Dieser erfolgreiche Auftakt wird in den nächsten Wochen weiter ausgebaut.</p>
+{{< /div >}}
+{{< /section >}}
 
 {{< section class="section-a atelier-section" >}}
 {{< div class="atelier-info" >}}
@@ -79,13 +87,62 @@ Vom 25. Juli bis 26. September 2020 fanden in Jena die Straßenpflaster-Festspie
 {{< /section >}}
 
 
-"Die vermisste Freundin" Begib dich auf die Suche nach Bianca und lerne dabei eine Reihe von verrückter Charaktere kennen. https://actionbound.com/bound/woistbiancaa
-"Kunst zum Überleben" https://actionbound.com/bound/kunstzumueberlebenfbj
-Wie kann man digitales Spiel mit der realen Welt verknüpfen? Im Mai wagte das Atelier das Experiment.
-"Stille Post"
-Erfahrt spielerisch wie man in Kleingruppenarbeit in kurzer Zeit Rollen selbst entwickeln kann.
+{{< div class="atelier-bound-title">}}
+<a target="_blank" rel="noreferrer" href="https://actionbound.com"><img src="./img/actionbound-logo.png" alt="Link zum action bound"></a>
+{{< /div >}}
 
- https://actionbound.com/bound/stillepostfbj
-"Magische Welten" Begib dich mit Ariel auf eine Reise in deine Fantasie.
- https://actionbound.com/bound/magischeweltenfbj
+Im Mai erstellte das Atelier in Gruppenarbeit ganz unterschiedliche Actionbounds, also digital unterstützte Spiele, Meditationen, Rollenspiele und Abenteuer. Falls ihr diese selbst spielen oder einfach nur anschauen  wollt, ladet euch einfach die kostenlose App auf euer mobiles Endgerät! Wie das funktioniert seht ihr hier: https://actionbound.com/
+
+
+{{< section class="section-a atelier-section atelier-bound" >}}
+
+{{< div class="atelier-bound-info atelier-info" >}}
+<p>Begib dich auf die Suche nach Bianca und lerne dabei eine Reihe von verrückter Charaktere kennen.</p>
+{{< /div >}}
+
+{{< div class="atelier-bound-button" >}}
+<a target="_blank" rel="noreferrer" href="https://actionbound.com/bound/woistbiancaa"><img src="./img/action-bound-button.png" alt="Link zum action bound"></a>
+
+{{< /div >}}
+
+{{< /section >}}
+
+{{< section class="section-a atelier-section atelier-bound" >}}
+
+{{< div class="atelier-bound-info atelier-info" >}}
+<p>Wie kann man digitales Spiel mit der realen Welt verknüpfen? Im Mai wagte das Atelier das Experiment.</p>
+{{< /div >}}
+
+{{< div class="atelier-bound-button" >}}
+<a target="_blank" rel="noreferrer" href="https://actionbound.com/bound/kunstzumueberlebenfbj"><img src="./img/action-bound-button.png" alt="Link zum action bound"></a>
+
+{{< /div >}}
+
+{{< /section >}}
+
+{{< section class="section-a atelier-section atelier-bound" >}}
+
+{{< div class="atelier-bound-info atelier-info" >}}
+<p>Erfahrt spielerisch, wie man in Kleingruppenarbeit in kurzer Zeit Rollen selbst entwickeln kann.</p>
+{{< /div >}}
+
+{{< div class="atelier-bound-button" >}}
+<a target="_blank" rel="noreferrer" href="https://actionbound.com/bound/stillepostfbj"><img src="./img/action-bound-button.png" alt="Link zum action bound"></a>
+
+{{< /div >}}
+
+{{< /section >}}
+
+{{< section class="section-a atelier-section atelier-bound" >}}
+
+{{< div class="atelier-bound-info atelier-info" >}}
+<p>Begib dich mit Ariel auf eine Reise in deine Fantasie.</p>
+{{< /div >}}
+
+{{< div class="atelier-bound-button" >}}
+<a target="_blank" rel="noreferrer" href="https://actionbound.com/bound/magischeweltenfbj"><img src="./img/action-bound-button.png" alt="Link zum action bound"></a>
+
+{{< /div >}}
+
+{{< /section >}}
 
