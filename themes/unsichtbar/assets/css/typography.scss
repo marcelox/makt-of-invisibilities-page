@@ -30,7 +30,18 @@ body {
     color: var(--fb-dark);
     .dark & {
       color: var(--white);
+
+      &.page-title {
+        color: var(--petrol);
+
+        @include breakpoint(xlarge) {
+          font-size: 8rem;
+		  line-height: 1.5;
+          //text-align: left;
+        }
+      }
     }
+
     font-size: var(--h#{$i});
 	font-family: 'Agency FB Bd Cond', "Helvetica Neue", sans-serif;
     font-weight: normal;
