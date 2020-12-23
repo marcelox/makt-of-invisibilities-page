@@ -1,9 +1,9 @@
 {{ define "main" }}
 <h2 class="page-title">{{ .Title }}</h2>
 {{ .Content }}
-{{ range .Pages.ByTitle }}
-<ul>
-    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+<ul class="november-nav">
+    {{ range .Pages.ByTitle }}
+    <li class="november-nav-item" style="background-image: url('./img/{{ .Title | urlize}}.jpg')"><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span></a></li>
+    {{ end }}
 </ul>
-{{ end }}
 {{ end }}

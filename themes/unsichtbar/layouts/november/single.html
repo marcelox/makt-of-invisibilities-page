@@ -3,12 +3,17 @@
 <h2 class="page-title">{{ .Title }}</h2>
 {{ .Content }}
 
-<div class="swiper-container">
+<div class="swiper-container november">
     <div class="swiper-wrapper">
-        {{ range (readDir "/content/gedenken-an-die-novemberpogrome/img/") }}
+        {{ with .Resources.ByType "image" }}
+        {{ range . }}
         <div class="swiper-slide">
-            <img src="/gedenken-an-die-novemberpogrome/img/{{- .Name  -}} " alt="">
+            <figure>
+                <img src="{{ .RelPermalink }}" alt="{{ with .Exif.Tags.ImageDescription }}{{.}}{{ end }}">
+                <figcaption><p>&copy; {{ with .Exif.Tags.Copyright }}{{.}}{{else}}Tina Peißker{{ end }}</p></figcaption>
+            </figure>
         </div>
+        {{ end }}
         {{ end }}
     </div>
     <div class="swiper-button-next"></div>
@@ -16,6 +21,5 @@
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
 </div>
-
 
 {{ end }}

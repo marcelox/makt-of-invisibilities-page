@@ -11,3 +11,7 @@ Dieses ritualisierte Gedenken haben wir durch wiederholende Phrasen, die durch w
 
 
 siehe auch: www.klang-der-stolpersteine.de
+
+{{< div class="november-audio" >}}
+{{< audio "./audio/erinnern.mp3" "mpeg" >}}
+{{< /div >}}
