@@ -45,6 +45,9 @@ header, footer {
 }
 
 main {
+  @include breakpoint(xlarge) {
+	position: relative;
+  }
   margin-top: var(--header-height);
   transition: margin-top 450ms;
   border-radius: $border-radius;
