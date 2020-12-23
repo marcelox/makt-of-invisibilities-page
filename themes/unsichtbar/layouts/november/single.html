@@ -1,11 +1,13 @@
 {{ define "main" }}
 
+<h2 class="page-title">{{ .Title }}</h2>
+{{ .Content }}
 
 <div class="swiper-container">
     <div class="swiper-wrapper">
-        {{ range (readDir "content/gedenken-an-die-novemberpogrome/img/") }}
+        {{ range (readDir "/content/gedenken-an-die-novemberpogrome/img/") }}
         <div class="swiper-slide">
-            <img src="img/{{- .Name -}}" alt="">
+            <img src="/gedenken-an-die-novemberpogrome/img/{{- .Name  -}} " alt="">
         </div>
         {{ end }}
     </div>
@@ -15,6 +17,5 @@
     <div class="swiper-pagination"></div>
 </div>
 
-{{ .Content }}
 
 {{ end }}
