@@ -651,3 +651,98 @@ img {
 	}
   }
 }
+
+.station {
+  &-wrapper {
+	display: grid;
+  }
+
+  @include full-bleed;
+  @include paddings;
+  display: grid;
+  grid-template: auto auto / 1fr;
+  grid-template-areas: "image"
+						"audio";
+  grid-row-gap: 2rem;
+
+  &-audio {
+	grid-area: audio;
+	justify-self: center;
+  }
+
+  &-image {
+	grid-area: image;
+	@include breakpoint(large) {
+	  display: grid;
+	}
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 4.5rem;
+
+	img {
+	  align-self: center;
+	  border: .125rem solid black;
+	  filter: invert(4);
+	  width: 100%;
+	}
+
+	.station-info {
+	  align-self: center;
+	  color: var(--white);
+
+	  .station-info-title {
+		color: var(--fb-dark);
+		text-align: left;
+		margin-left: 0;
+	  }
+
+	  p {
+		margin-left: 0;
+		color: var(--fb-dark);
+		font-size: 1.5rem;
+
+		@include breakpoint(xlarge) {
+		  font-size: 2rem;
+		}
+	  }
+	}
+  }
+
+  &:nth-child(odd) {
+	background-color: var(--white);
+
+	.station-image {
+	  img {
+		filter: none;
+		grid-column: 2/3;
+	  }
+
+	  .station-info {
+		grid-column: 1/2;
+		grid-row-start: 1;
+		color: var(--fb-dark);
+	  }
+	}
+  }
+  &:nth-child(even) {
+	background-color: currentColor;
+
+	.station-info-title, p {
+	  color: var(--white);
+	}
+  }
+
+  &:last-child {
+	@include breakpoint(xxlarge) {
+	  margin-bottom: -6rem;
+	}
+  }
+}
+
+.stadtgefluester {
+  > p {
+	@include breakpoint(xlarge) {
+	  margin-top: 9rem;
+	  margin-bottom: 15rem;
+	}
+  }
+}

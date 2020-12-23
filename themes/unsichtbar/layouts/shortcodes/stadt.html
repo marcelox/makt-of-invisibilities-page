@@ -1,0 +1,17 @@
+<div class="station">
+    <div class="station-audio">
+        <div class="audio-container">
+            <audio controls class="audio">
+                <source src="./media/{{ index .Params 0 }}.mp3"  type="audio/mpeg">
+                Sorry, your browser doesn't support embedded audios.
+            </audio>
+        </div>
+    </div>
+    <figure class="station-image">
+        <img src="./media/{{ index .Params 0 }}.png" alt="{{with .Get "alt" }}{{.}}{{ end }}">
+        <figcaption class="station-info">
+            {{ with index .Params 1 }}<h3 class="station-info-title">{{.}}</h3>{{ end }}
+            <p>{{ .Inner }}</p>
+        </figcaption>
+    </figure>
+</div>
