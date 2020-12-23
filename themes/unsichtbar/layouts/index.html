@@ -7,11 +7,15 @@
         Überraschungen präsentieren. Denn auch wir waren und sind von Unsichtbarkeit bedroht...</p>
 </div>
 <nav class="projects-nav">
+    <ul class="circles">
     {{ range .Pages }}
+        <li>
     <a class="projects-nav-item" href="{{ .RelPermalink }}"
        style="background-image: url('{{ if .Params.image }}{{ .RelPermalink }}{{ end }}{{ with .Params.image }}{{ . }}{{ else }}/img/placeholder_abstract.jpg{{ end }}')">
         <h2>{{- .Title -}}</h2>
     </a>
+        </li>
     {{ end }}
+    </ul>
 </nav>
 {{ end }}
