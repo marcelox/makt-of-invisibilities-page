@@ -1,7 +1,7 @@
 ---
 title: "Wald der Erinnerungen"
 date: 2020-12-05T15:05:35+01:00
-draft: true
+draft: false
 image: "kindertheater.jpg"
 type: "november"
 ---
