@@ -200,15 +200,19 @@ img {
 
 .projects-nav {
   @include paddings;
-  display: grid;
-  grid-gap: 2rem;
 
-  @include breakpoint($passepartout-breakpoint) {
-	grid-template-columns: repeat(3, 1fr);
-  }
+  .projects {
+	display: grid;
+	grid-gap: 2rem;
 
-  @include breakpoint(xxxlarge) {
-	grid-template-columns: repeat(5, 1fr);
+	@include breakpoint($passepartout-breakpoint) {
+	  grid-template-columns: repeat(3, 1fr);
+	}
+
+	@include breakpoint(xxxlarge) {
+	  grid-template-columns: repeat(5, 1fr);
+	}
+
   }
 
   .projects-nav-item {
@@ -259,6 +263,30 @@ img {
 	  }
 	}
 
+  }
+}
+
+.accessible-nav {
+  display: none;
+
+  @include breakpoint(xlarge) {
+	display: block;
+  }
+
+  font-family: 'Agency FB Bd Cond', "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  padding: 2rem;
+  cursor: pointer;
+  z-index: 2;
+
+  .stop-animation, .restart-animation {
+	display: none;
+  }
+  .visible {
+	display: inline;
   }
 }
 

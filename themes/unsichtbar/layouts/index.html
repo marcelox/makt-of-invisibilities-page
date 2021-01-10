@@ -7,7 +7,7 @@
         Überraschungen präsentieren. Denn auch wir waren und sind von Unsichtbarkeit bedroht...</p>
 </div>
 <nav class="projects-nav">
-    <ul class="circles">
+    <ul class="projects animated circles">
     {{ range .Pages }}
         <li>
     <a class="projects-nav-item" href="{{ .RelPermalink }}"
@@ -18,4 +18,5 @@
     {{ end }}
     </ul>
 </nav>
+<button class="accessible-nav">Animation<span class="stop-animation visible"> stoppen</span><span class="restart-animation"> wiederbeleben</span></button>
 {{ end }}
