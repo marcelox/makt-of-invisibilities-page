@@ -10,7 +10,7 @@
         </main>
         {{- partial "footer.html" . -}}
 
-        {{ $built := resources.Get "js/index.js" | js.Build "js/main.js" }}
+        {{ $built := resources.Get "js/index.js" | js.Build "js/main.js" | babel }}
         <script type="text/javascript" src="{{ $built.RelPermalink }}"></script>
 
     </body>
